@@ -10,7 +10,7 @@ while True:
     # if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,23):
     if dt.now() != dt(dt.now().year,dt.now().month,dt.now().day,23):
         print("Working hours...")
-        with open(hosts_temp,'') as file:
+        with open(hosts_temp,'r+', encoding="utf-8") as file:
             content=file.read()
             print(content)
     else:
